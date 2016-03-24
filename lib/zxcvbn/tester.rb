@@ -2,7 +2,7 @@ module Zxcvbn
   require "execjs"
 
   class Tester
-    DATA_PATH = Pathname(File.expand_path('../../../data/zxcvbn.js', __FILE__))
+    DATA_PATH = Pathname(File.expand_path('../../../vendor/assets/javascripts/zxcvbn.js', __FILE__))
 
     def initialize
       src = File.open(DATA_PATH, 'r').read
