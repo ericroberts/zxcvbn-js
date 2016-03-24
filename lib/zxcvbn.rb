@@ -14,4 +14,9 @@ module Zxcvbn
     tester = Tester.new
     tester.test(password, user_inputs)
   end
+
+  module Rails
+    class Engine < ::Rails::Engine
+    end
+  end
 end
